@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html ng-app="routingDemoApp">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NetInteractiva</title>
+  <!-- Bootstrap -->
+
+  <link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="./src/css/main.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+
+  <script type="text/javascript" src="./bower_components/jquery/dist/jquery.js"></script>
+  <script type="text/javascript" src="./bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+  <script src="./bower_components/angular/angular.js"></script>
+  <script src="./bower_components/angular-route/angular-route.js"></script>
+  <!-- <script data-require="angular.js@1.2.28" data-semver="1.2.28" src="https://code.angularjs.org/1.2.28/angular.js"></script>
+   <script data-require="angular-route@1.2.28" data-semver="1.2.28" src="https://code.angularjs.org/1.2.28/angular-route.js"></script> -->
+   <link rel="stylesheet" href="style.css" />
+  <script src="./src/js/controller.js"></script>
+</head>
+
+<body >
+
+  <!--Main Navigation-->
+<header>
+
+  <!--Navbar-->
+  <nav class="navbar navbar-expand-lg navbar-dark indigo  header-net">
+
+    <!-- Additional container -->
+    <div class="container">
+
+      <!-- Navbar brand -->
+      <a class="navbar-brand" href="#"><img src="./src/images/logos/logo-new.png" alt="logo net interactiva" class="img-responsive logo"/></a>
+
+      <!-- Collapse button -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+        aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Collapsible content -->
+      <div class="collapse navbar-collapse" id="basicExampleNav">
+
+        <!-- Links -->
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <!-- Dropdown -->
+          <!-- <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">Dropdown</a>
+            <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li> -->
+
+        </ul>
+        <!-- Links -->
+        <!-- <form class="form-inline">
+          <div class="md-form my-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+          </div>
+        </form> -->
+      </div>
+      <!-- Collapsible content -->
+
+    </div>
+    <!-- Additional container -->
+
+  </nav>
+</header>
+  <!--/.Navbar-->
+
+<section class="home-slider">
+  <div class="bd-example">
+    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="carousel-caption d-md-block">
+            <h5>Second slide label</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+          <img src="./src/img/slide-four.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <div class="carousel-caption d-md-block">
+            <h5>Second slide label</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+          <img src="./src/img/slide-two.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+          </div>
+          <img src="./src/img/slider-one.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+
+</section>
+<!-- seccion servicio -->
+<section class="seccion-quienes">
+  <div class='container-fluid'>
+    <div class="row">
+      <div class="col d-flex justify-content-center section-title">
+        <div class="h1 titulo-secciones">Servicios</div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12  col-md-4 mt-sm-2">
+        <div class="quienes-cont">
+          <h2>soporte informático</h2>
+          <div class="cont-parrafo">
+            <p>Nuestros clientes pueden gestionar sus actividades sin preocupaciones por el funcionamiento de sus sistemas y equipos.</p>
+            <p>NETINTERACTIVA se ocupa de resolver todos sus problemas computacionales.</p>
+            <p>
+              <ul>
+                <li class="feature"><span class="mdi mdi-account-check"></span> Visita correctiva</li>
+                <li class="feature"><span class="mdi mdi-alert-decagram"></span> Visita preventiva</li>
+                <li class="feature"><span class="mdi mdi-clock-outline"></span> Planes de mantención y asesoria</li>
+                <li class="feature"><span class="mdi mdi-account-network"></span> Instalación puntos de red</li>
+              </ul>
+            </p>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-xs-12  col-md-4 mt-sm-2">
+        <div class="quienes-cont">
+          <h2>Sistema de vigilancia CCTV</h2>
+          <div class="cont-parrafo">
+            <p>A partir de 2017 ponemos a disposición de nuestros clientes el servicio de seguridad por cámaras de vigilancia.</p>
+            <p>
+              Estas son integradas en un sistema de Circuito Cerrado de Televisión (CCTV) que permite un control efectivo y permanente.
+            </p>
+            <p>
+              NETINTERACTIVA se ocupa de instalar y mantener el sistema, asegurando un funcionamiento óptimo y en cumplimiento con los estándares de calidad.
+            </p>
+            <p>
+              <ul>
+                <li class="feature"><span class="mdi mdi-monitor-dashboard"></span> Vigilancia CCTV</li>
+              </ul>
+            </p>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12  col-md-4 mt-sm-2">
+        <div class="quienes-cont">
+          <h2>soporte informático</h2>
+          <div class="cont-parrafo">
+            <p>
+              Siempre es indispensable mantener un sistema estable y proteger la información respaldándola.
+            </p>
+            <p>
+              Acompañamos tu desarrollo asesorando y brindando soluciones eficientes, desde la puesta en marcha hasta procedimientos específicos como la migración de correos corporativos a Google.
+            </p>
+            <p>
+              Conoce más sobre los servicios de ingeniería de Netinteractiva.
+            </p>
+            <p>
+              <ul>
+                <li class="feature"><span class="mdi mdi-lightbulb-on"></span> Proyectos</li>
+              </ul>
+            </p>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- fin seccion servicio -->
+
+<!-- seccion visitas -->
+<section class="seccion-visitas">
+  <div class="container-fluid">
+    <div class="row h-margin-row">
+      <div class="col-xs-12 col-md-6">
+        <div class="img-cont img-responsive"></div>
+      </div>
+      <div class="col-xs-12 col-md-6">
+        <div class="d-flex">
+          <h1>Visitas Correctivas</h1>
+        </div>
+        <h2>Están enfocadas a resolver problemas concretos de software o hardware.</h2>
+        <div class="visitas-contenido">
+          <h3>Problemas de Software</h3>
+          <p>Son visitas únicas y no están asociadas a un plan de mantención.
+          Están destinadas a solucionar cualquier problema que impida
+          el correcto funcionamiento del sistema de los equipos su empresa.
+          </p>
+          <h3>Casos Comunes:</h3>
+          <p>Son visitas únicas y no están asociadas a un plan de mantención.
+          Están destinadas a solucionar cualquier problema que impida
+          el correcto funcionamiento del sistema de los equipos su empresa.
+          </p>
+          <p>
+            <ul>
+                <li>Ventanas se abren solas</li>
+                <li>Publicidad en navegadores</li>
+                <li>Falsos antivirus que indican que tiene problemas o virus</li>
+                <li>Lentitud excesiva</li>
+                <li>Problemas de velocidad en internet</li>
+                <li>Virus</li>
+                <li>Instalación o reinstalación de sistema operativo</li>
+                <li>Barras de herramientas</li>
+                <li>Programas no deseados</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row h-margin-row">
+      <div class="col-xs-12 col-md-6">
+        <div class="d-flex">
+          <h1>Problemas de Hardware</h1>
+        </div>
+        <h2>Esta visita soluciona problemas fisicos de los computadores.</h2>
+        <div class="visitas-contenido">
+          <h3>Casos comunes:</h3>
+          <p>
+            <ul>
+                <li>Sonidos en ventiladores</li>
+                <li>Problemas con fuente de poder</li>
+                <li>Cambio de piezas en computadores</li>
+                <li>Cambio de pantallas o teclados en notebook</li>
+                <li>Derrame de líquido en equipos</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+      <div class="col-xs-12 col-md-6">
+        <div class="img-cont2 img-responsive"></div>
+      </div>
+
+    </div>
+    <div class="row h-margin-row">
+      <div class="col-xs-12 col-md-6">
+        <div class="img-cont3 img-responsive"></div>
+      </div>
+      <div class="col-xs-12 col-md-6">
+        <div class="d-flex">
+          <h1>Visitas preventivas</h1>
+        </div>
+        <h2>Están enfocadas a controlar y asegurar un buen funcionamiento de software o hardware.</h2>
+        <div class="visitas-contenido">
+          <p>Para asegurar el correcto desempeño de los equipos, sus respectivos sistemas y funciones,es necesario efectuar mantenciones cada cierto tiempo.
+          </p>
+          <h3>Casos Comunes:</h3>
+          <p>
+            <ul>
+              <li>Mantención térmica (cambio pasta disipadora en procesadores)</li>
+              <li>Limpieza interior equipos</li>
+              <li>Instalación de antivirus</li>
+              <li>Instalación de anti-malware</li>
+              <li>Revisión de inicio de software</li>
+              <li>Licenciamiento de computadores</li>
+              <li>Revisión de configuración de impresoras</li>
+              <li>Actualización de mejoras para el sistema operativo o software ofimatica</li>
+              <li>Respaldos de computadores</li>
+
+
+            </ul>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row h-margin-row">
+    <div class="col-xs-12 col-md-8">
+      <h2 class="text-justify h-padding-top-15p">
+              <span class="mdi mdi-alert-circle text-danger small"></span>
+              <strong class="small"> Ante una eventual reinstalación del sistema operativo nuestros técnicos respaldarán toda la información de los usuarios.
+          </strong>
+      </h2>
+    </div>
+    <div class="col-xs-12 col-md-3">
+      <a class="btn bg-blue-corp btn-lg cl-white">Contáctenos</a>
+    </div>
+
+    </div>
+  </div>
+</section>
+<!-- fin seccion visitas -->
+
+<!-- seccion planes -->
+<section class="seccion-planes">
+  <div class='container-fluid'>
+    <div class="row">
+      <div class="col-xs-12 planes-titulo">
+        <h1 class="">Planes Mantención</h1>
+
+      </div>
+      <div class="col-xs-12 planes-subtitulo">
+        <h3>Servicio especializado para empresas MIPYME que requieran a un partner tecnológico con atención 24/7. </h3>
+      </div>
+
+    </div>
+    <div class="row">
+      <div class="col-xs-12  col-md-4 mt-sm-2">
+        <div class="planes-cont">
+          <div class="" style="height: 110px; background: lightgreen; margin: 0px 0px 20px 0px">
+            icono
+          </div>
+          <h2>Inventario Inicial</h2>
+          <div class="cont-parrafo">
+            <p>Se realiza una revisión completa de los equipos y sistemas para luego entregar un informe de mejoras. </p>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-xs-12  col-md-4 mt-sm-2">
+        <div class="planes-cont">
+          <div class="" style="height: 110px; background: lightgreen; margin: 0px 0px 20px 0px">
+            icono2
+          </div>
+          <h2>Informe con mejoras a realizar</h2>
+          <div class="cont-parrafo">
+            <p>Se estabilizan equipos y sistemas mejorando su desempeño y respuesta de acuerdo al informe presentado.  </p>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-xs-12  col-md-4 mt-sm-2">
+        <div class="planes-cont">
+          <div class="" style="height: 110px; background: lightgreen; margin: 0px 0px 20px 0px">
+            icono 3
+          </div>
+          <h2>Mantenciones Preventivas y Correctivas</h2>
+          <div class="cont-parrafo">
+            <p>Soporte programado y de emergencia para usuarios. Opera tanto de forma remota como en visitas a terreno con atención personalizada permanente. </p>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="col">
+          <div class="row h-margin-row">
+              <div class="col d-flex justify-content-center">
+                  <img src="src/images/web/tmv.png" alt="" height="80">
+                  <img src="src/images/web/monitoring.png" alt="" height="80">
+                  <img src="src/images/web/osticket.png" alt="" height="80">
+              </div>
+          </div>
+          <div class="row mt-3">
+              <div class="col d-flex justify-content-center">
+                  <p>TODOS NUESTROS PLANES CUENTAN CON SERVICIO DE CONEXIÓN REMOTA Y SISTEMA DE TICKETS PARA UNA MEJOR ATENCIÓN</p>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col d-flex justify-content-center">
+                  <a class="btn bg-blue-corp btn-lg cl-white text-uppercase">solicite nuestra propuesta comercial</a>
+              </div>
+          </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- fin seccion planes -->
+
+<!-- seccion banner -->
+<section class="seccion-banner">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12 banner-titulo">
+        <h2>Dedicale más tiempo a tus negocios</h2>
+        <h2>Somos el mejor partner tecnológico</h2>
+      </div>
+    </div>
+  </div>
+</section>
+<!--Fin seccion banner -->
+
+<!-- seccion-google -->
+<section class="seccion-google">
+  <div class='container-fluid'>
+    <div class="row h-margin-row">
+      <div class="col-xs-12 col-md-6">
+        <div class="img-cont4 img-responsive"></div>
+      </div>
+      <div class="col-xs-12 col-md-6">
+        <div class="d-flex">
+          <h1>Proyectos</h1>
+        </div>
+        <h2>Enfocados a la seguridad y mejora continua de la tecnologia de su empresa. </h2>
+        <div class="google-contenido">
+          <h3>Migración de servicios de correo a google apps for work</h3>
+          <p> Google apps for work le permitira conectarse desde cualquier computador o smartphone a su correo electronico, google drive, calendario.
+          </p>
+          <h3>Nuestros servicios incluyen:</h3>
+          <p>
+            <ul>
+                <li>Activación del dominio en los servidores de google</li>
+                <li>Cambios en hosting del cliente</li>
+                <li>Creación de las cuentas de correo en google</li>
+                <li>Migración de los correos, contactos, calendario del cliente a través del software G Suite Migration for Microsoft Outlook®</li>
+                <li>Configuración y descarga de los correos, contactos, calendario a traves del software Google Apps Sync for Microsoft Outlook® .</li>
+                <li>Configuración SPF, DKIM, DMARC asegurando la llegada de los correos a los clientes.</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- fin seccion-google -->
+
+<!-- seccion cctv -->
+<section class="seccion-cctv">
+  <div class='container-fluid'>
+    <div class="row">
+      <div class="col-xs-12 cctv-titulo">
+        <h1 class="">Sistema de vigilacia CCTV</h1>
+
+      </div>
+      <div class="col-xs-12 cctv-subtitulo">
+        <h3>Contamos con tecnología de punta para nuestros proyectos, con supervisión las 24 horas a través de dispositivos móviles. </h3>
+        <h2>El 100% de nuestros clientes declara sentirse satisfecho y más seguro con nuestro servicio.</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12  col-md-3 mt-sm-2">
+        <div class="cctv-cont">
+          <div class="image d-flex justify-content-center">
+              <img src="src/images/web/dahua.png" alt="" height="200">
+          </div>
+          <h2>Camaras de Interior</h2>
+          <div class="cont-parrafo">
+            <p>Trabajamos con camaras IPC66  </p>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-xs-12  col-md-3 mt-sm-2">
+        <div class="cctv-cont">
+          <div class="image d-flex justify-content-center">
+              <img src="src/images/web/dahua-ext.png" alt="" height="200">
+          </div>
+
+          <h2>Camaras de Exterior</h2>
+          <div class="cont-parrafo">
+            <p>Utilizamos cable 100% cobre para todos nuestros proyectos.  </p>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-xs-12  col-md-3 mt-sm-2">
+        <div class="cctv-cont">
+          <div class="image d-flex justify-content-center">
+              <img src="src/images/web/dahua-pss.png" alt="" height="200">
+          </div>
+
+          <h2>Software propio de la Marca</h2>
+          <div class="cont-parrafo">
+            <p>Alimentación de camaras, con cable independiente para cada camara.  </p>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-xs-12  col-md-3 mt-sm-2">
+        <div class="cctv-cont">
+          <div class="image d-flex justify-content-center">
+              <img src="src/images/web/dahua-multiplatform-2.png" alt="" height="200">
+          </div>
+
+          <h2>Multiplataformal</h2>
+          <div class="cont-parrafo">
+            <p>Mejoras continuas en nuestros tecnicos.  </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="row h-margin-row">
+        <div class="col d-flex justify-content-center">
+            <a class="btn bg-blue-corp btn-lg cl-white text-uppercase">solicite nuestra propuesta comercial</a>
+        </div>
+    </div>
+  </div>
+</section>
+<!--fin seccion cctv -->
+
+
+<section class="seccion-clientes">
+  <div class='container-fluid'>
+    <div class="row">
+      <div class="col-xs-12 planes-titulo">
+        <h1 class="">Nuestros clientes</h1>
+
+      </div>
+      <div class="col-xs-12 planes-subtitulo">
+        <h3>Somos más que un proveedor de servicios, somos un partner tecnológico siempre presente, somos NETINTERACTIVA.  </h3>
+      </div>
+
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-3  ">
+        <div class="clientes-img">
+          uno
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-3  ">
+        <div class="clientes-img">
+          dos
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-3  ">
+        <div class="clientes-img">
+          tres
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-3  ">
+        <div class="clientes-img">
+          cuatro
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
