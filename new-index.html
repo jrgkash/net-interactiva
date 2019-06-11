@@ -26,21 +26,53 @@
    <script data-require="angular-route@1.2.28" data-semver="1.2.28" src="https://code.angularjs.org/1.2.28/angular-route.js"></script> -->
    <link rel="stylesheet" href="style.css" />
   <script src="./src/js/controller.js"></script>
+  <script>
+  $(document).ready(function(){
+    // Add smooth scrolling to all links
+    $("a").on('click', function(event) {
+
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+
+        // Store hash
+        var hash = this.hash;
+
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function(){
+
+          // Add hash (#) to URL when done scrolling (default click behavior)
+          window.location.hash = hash;
+        });
+      } // End if
+    });
+  });
+  </script>
 </head>
 
 <body >
+  <div class="boton-movil">
+    <button onclick="topFunction()" id="myBtn" title="Go to top" class="boton-movil"><i class="material-icons">
+    keyboard_arrow_up
+    </i> </button>
+  </div>
+
 
   <!--Main Navigation-->
-<header>
+<header id="inicio">
 
   <!--Navbar-->
-  <nav class="navbar navbar-expand-lg navbar-dark indigo  header-net">
+  <nav class="navbar navbar-expand-lg navbar-light bg-lignt header-net">
 
     <!-- Additional container -->
     <div class="container">
 
       <!-- Navbar brand -->
-      <!-- <a class="navbar-brand" href="#"><img src="./src/images/logos/logo-new.png" alt="logo net interactiva" class="img-responsive logo"/></a> -->
+      <a class="navbar-brand" href="#"><img src="./src/images/logos/logo-new.png" alt="logo net interactiva" class="img-responsive logo"/></a>
 
       <!-- Collapse button -->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
@@ -54,15 +86,21 @@
         <!-- Links -->
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Home
+            <a class="nav-link" href="#inicio">Inicio
               <span class="sr-only">(current)</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Features</a>
+            <a class="nav-link" href="#servicio">Nuestros servicios</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
+            <a class="nav-link" href="#clientes">Nuestros clientes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#equipo">Nuestro equipo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contacto">Contacto</a>
           </li>
           <!-- Dropdown -->
           <!-- <li class="nav-item dropdown">
@@ -103,22 +141,22 @@
       <div class="carousel-inner">
         <div class="carousel-item active">
           <div class="carousel-caption d-md-block">
-            <h5>Second slide label</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <h5>Soporte Informático</h5>
+            <p>Ofrecemos un alto servicio de soporte digital</p>
           </div>
           <img src="./src/img/slide-four.jpg" class="d-block w-100" alt="...">
         </div>
         <div class="carousel-item">
           <div class="carousel-caption d-md-block">
-            <h5>Second slide label</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <h5>Sistema de vigilancia CCTV</h5>
+            <p>Contamos con el mejor despliegue</p>
           </div>
           <img src="./src/img/slide-two.jpg" class="d-block w-100" alt="...">
         </div>
         <div class="carousel-item">
           <div class="carousel-caption d-none d-md-block">
-            <h5>Third slide label</h5>
-            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+            <h5>Ingenieria</h5>
+            <p>Contamos las mejores soluciones profesionales</p>
           </div>
           <img src="./src/img/slider-one.jpg" class="d-block w-100" alt="...">
         </div>
@@ -184,7 +222,7 @@
       </div>
       <div class="col-xs-12  col-md-4 mt-sm-2">
         <div class="quienes-cont">
-          <h2>soporte informático</h2>
+          <h2>Ingeniería</h2>
           <div class="cont-parrafo">
             <p>
               Siempre es indispensable mantener un sistema estable y proteger la información respaldándola.
@@ -211,7 +249,7 @@
 <!-- fin seccion servicio -->
 
 <!-- seccion visitas -->
-<section class="seccion-visitas">
+<section class="seccion-visitas " id="servicio">
   <div class="container-fluid">
     <div class="row h-margin-row">
       <div class="col-xs-12 col-md-6">
@@ -337,8 +375,8 @@
     <div class="row">
       <div class="col-xs-12  col-md-4 mt-sm-2">
         <div class="planes-cont">
-          <div class="" style="height: 110px; background: lightgreen; margin: 0px 0px 20px 0px">
-            icono
+          <div class="imagen-plan" >
+            <img src="src/images/web/plan-01.png" alt="" class="img-responsive">
           </div>
           <h2>Inventario Inicial</h2>
           <div class="cont-parrafo">
@@ -349,8 +387,8 @@
       </div>
       <div class="col-xs-12  col-md-4 mt-sm-2">
         <div class="planes-cont">
-          <div class="" style="height: 110px; background: lightgreen; margin: 0px 0px 20px 0px">
-            icono2
+          <div class="imagen-plan" >
+            <img src="src/images/web/plan-02.png" alt="" class="img-responsive">
           </div>
           <h2>Informe con mejoras a realizar</h2>
           <div class="cont-parrafo">
@@ -361,8 +399,8 @@
       </div>
       <div class="col-xs-12  col-md-4 mt-sm-2">
         <div class="planes-cont">
-          <div class="" style="height: 110px; background: lightgreen; margin: 0px 0px 20px 0px">
-            icono 3
+          <div class="imagen-plan" >
+            <img src="src/images/web/plan-03.png" alt="" class="img-responsive">
           </div>
           <h2>Mantenciones Preventivas y Correctivas</h2>
           <div class="cont-parrafo">
@@ -519,8 +557,8 @@
 </section>
 <!--fin seccion cctv -->
 
-
-<section class="seccion-clientes">
+<!-- seccion clientes -->
+<section class="seccion-clientes" id="clientes">
   <div class='container-fluid'>
     <div class="row">
       <div class="col-xs-12 planes-titulo">
@@ -578,6 +616,156 @@
     </div>
   </div>
 </section>
+<!--fin seccion clientes -->
+
+<!-- seccion team -->
+<section class="seccion-team" id="equipo">
+  <div class='container-fluid'>
+    <div class="row">
+      <div class="col-xs-12 team-titulo">
+        <h1 class="">Nuestro equipo</h1>
+      </div>
+      <div class="col-xs-12 team-subtitulo">
+        <h3>Nuestra empresa está conformada por personas altamente calificadas para poder entregar el mejor servicio que usted se merece.</h3>
+      </div>
+    </div>
+    <div class="row mt-5 team-cont">
+        <div class="col">
+            <div class="profile d-flex justify-content-center flex-column">
+              <h2>Coordinador General Informática</h2>
+                <div class="picture rounded-circle mx-auto">
+                    <figure>
+                        <img src="src/images/equipo/daniel_orellana.jpg" alt="">
+                        <figcaption>
+                            Daniel Orellana
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="name text-center my-2">Daniel Orellana</div>
+                <p class=" text-justify">
+                  Técnico en Computación e Informática, egresado y titulado el año 2015 con distinción máxima. Con vasta experiencia en los distintos aspectos del trabajo informático para distintas empresas.
+                </p>
+            </div>
+        </div>
+        <div class="col">
+            <div class="profile d-flex justify-content-center flex-column mt-4 mt-sm-0">
+                <h2>Relacionador Comercial</h2>
+
+                <div class="picture rounded-circle mx-auto">
+                    <figure>
+                        <img src="src/images/equipo/gustavo_avila.jpg" alt="" class="img-responsive">
+                        <figcaption>
+                            Gustavo Avila
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="name text-center my-2">Gustavo Ávila</div>
+                <p class=" text-justify">
+                  Técnico Financiero. Ejecutivo de ventas. Con la mejor disposición a entregar la mejor orientación para las mejoras informáticas de nuestros clientes.
+                </p>
+            </div>
+        </div>
+    </div>
+  </div>
+</section>
+<!-- fin seccion team -->
+
+<!-- contacto -->
+<section class="seccion-contacto" id="contacto">
+  <div class='container-fluid'>
+    <div class="row">
+      <div class="col-xs-12 contacto-titulo">
+        <h1 class="">CONTÁCTENOS</h1>
+      </div>
+      <div class="col-xs-12 contacto-subtitulo">
+        <h3>Somos más que un proveedor de servicios, somos un partner tecnológico siempre presente, somos NETINTERACTIVA.  </h3>
+      </div>
+    </div>
+    <div class="wrapper">
+      <div class="formInfo">
+        <div class="row">
+          <div class="col-sm-6">
+            <h4>INFORMACIÓN DEL CONTACTO</h4>
+            <div class="info-detail">
+              <ul><li><i class="fa fa-calendar"></i><span>Lunes - Viernes: </span>9:00 a 18:30 hrs.</li></ul>
+              <!-- <ul><li><i class="fa fa-map-marker"></i><span>Dirección: </span>Coquimbo 336 A, Santiago</li></ul> -->
+              <!-- <ul><li><i class="fa fa-phone"></i><span>Phone: </span> (562) 2 8463774</li></ul> -->
+              <ul><li><i class="fa fa-phone"></i><span>Celular: </span> (569) 4 2182770</li></ul>
+              <ul><li><i class="fa fa-envelope"></i><span>Email: </span> contacto@netinteractiva.cl</li></ul>
+              <!-- <img alt='oficina coquimbo 336'  src="http://www.netinteractiva.cl/img/vistaoficina.jpeg" width='380' height='200'> -->
+            </div>
+          </div>
+          <div class="col-sm-6">
+              <form id="contact-us" method="post" action="#">
+                  <!-- Left Inputs -->
+                  <div class="form-group">
+                    <input class="name" type="text" name="nombre" placeholder="Nombre" required >
+										<input class="email" type="email" name="email" placeholder="Email" required>
+										<input class="phone" type="tel" name="fono" placeholder="Telefono fijo o celular:" required>
+										<textarea class="message" name="mensaje" id="message" cols="30" rows="3" placeholder="Mensaje"
+										required></textarea>
+                    <button type="submit" id="submit" name="submit" class="form-btn semibold">Enviar</button>
+                  </div><!-- end form-group -->
+              </form>
+          </div>
+        </div>
+    </div> <!-- end wrapper-->
+  </div>
+  </div>
+</section>
+<!-- contacto -->
+
+<footer>
+  <div class='container'>
+    <div class='row'>
+      <div class='col-md-12'>
+        <ul>
+          <li>
+            <a href="#inicio">Inicio  </a>
+          </li>
+          <li>
+            <a href="#servicio">Nuestros servicios</a>
+          </li>
+          <li>
+            <a href="#clientes">Nuestros clientes</a>
+          </li>
+          <li>
+            <a href="#equipo">Nuestro equipo</a>
+          </li>
+          <li>
+            <a href="#contacto">Contacto</a>
+          </li>
+          <li><a href='#'>Terms</a></li>
+          <li><a href='#'>Privacy</a></li>
+          <li><a href='#'>Contact</a></li>
+          <li><a href='#'></a></li>
+          <p>&copy; NetInteractiva 2019</p>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("myBtn").style.display = "block";
+  } else {
+    document.getElementById("myBtn").style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
 
 
 

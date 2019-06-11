@@ -1,15 +1,49 @@
 body
   font-family: 'Lato', sans-serif
 
+html
+  scroll-behavior: smooth
+
+
+header
+    height: 100px
 .header-net
   background: white
   min-height: 100px
+  position: fixed
+  top: 0
+  width: 100%
+  z-index: 1000
   .navbar-collapse
-    padding: 0px 0px 0px 200px
+    padding: 0px 0px 0px 300px
   .nav-link
     color: #606E7C !important
   img
     height: 80px !important
+
+#myBtn
+  display: none
+  position: fixed
+  bottom: 20px
+  right: 30px
+  z-index: 99
+  font-size: 18px
+  border: none
+  outline: none
+  background-color: #4A90E2
+  color: white
+  cursor: pointer
+  padding: 6px 8px
+  border-radius: 20px
+  &:hover
+    background-color: #55BED1
+
+
+/* Makes images fully responsive
+
+
+
+
 
 
 
@@ -18,10 +52,18 @@ body
   padding: 0px
   margin: 0px
   min-height: 420px
+  p
+    font-size: 20px
+  h5
+    font-size: 65px
+  .img-responsive
+    display: block
+    width: 100%
+    height: auto
   .carousel-caption
     position: absolute
     right: 15%
-    bottom: 230px
+    bottom: 200px
     left: 15%
     z-index: 10
     padding-top: 20px
@@ -279,15 +321,239 @@ body
     border-radius: 10px 10px 10px 10px
     overflow: hidden
     border: solid 3px #fff
-    padding-top: 10px !important
-    padding-right: 25px !important
+    padding-top: 5px !important
+    padding-right: 0px !important
     padding-bottom: 0px !important
-    padding-left: 25px !important
+    padding-left: 40px !important
     color: #fff !important
-    margin: 20px 0px
+    margin: 20px auto
     img
-      height: 170px
-      margin: 0px 0px 0px 10px
+      width: 80%
+      margin: 0px auto 0 auto
+
+.seccion-team
+  width: 100%
+  padding-top: 50px
+  padding-bottom: 50px
+  margin: 0px
+  background: url(../images/web/fondo-team.png)
+  /* Set a specific height
+  min-height: 550px
+  /* Create the parallax scrolling effect
+  background-attachment: fixed
+  background-position: center
+  background-repeat: no-repeat
+  background-size: cover
+  .team-titulo
+    color: #fff
+    text-align: center !important
+    text-transform: uppercase
+    padding: 0
+    margin: 0px auto
+    width: 100%
+  .team-subtitulo
+    color: #eee
+    text-align: center !important
+    padding: 0
+    margin: 10px auto
+    h2
+      font-size: 27px !important
+      width: 100%
+      margin: 0px 0px 20px 0px
+      color: #eee !important
+      opacity: 0.9
+    h3
+      font-size: 20px !important
+      width: 100%
+      margin: 0px 0px 20px 0px
+      color: #eee !important
+      opacity: 0.9
+
+.seccion-contacto
+  width: 100%
+  padding-top: 50px
+  padding-bottom: 50px
+  margin: 0px
+  background: url(../images/web/fondo-contacto.png)
+  /* Set a specific height
+  min-height: 550px
+  /* Create the parallax scrolling effect
+  background-attachment: fixed
+  background-position: center
+  background-repeat: no-repeat
+  background-size: cover
+  li
+    font-size: 16px !important
+    width: 100%
+    margin: 0px
+    color: #184069
+    opacity: 0.9
+  h4
+    font-size: 22px !important
+    width: 100%
+    margin: 0px 0px 20px 0px
+    color: #184069
+    opacity: 0.9
+  .contacto-titulo
+    color: #184069
+    text-align: center !important
+    text-transform: uppercase
+    padding: 0
+    margin: 0px auto
+    width: 100%
+  .contacto-subtitulo
+    color: #184069
+    text-align: center !important
+    padding: 0
+    margin: 10px auto
+    h2
+      font-size: 27px !important
+      width: 100%
+      margin: 0px 0px 20px 0px
+      color: #184069
+      opacity: 0.9
+    h3
+      font-size: 20px !important
+      width: 100%
+      margin: 0px 0px 20px 0px
+      color: #184069
+      opacity: 0.9
+
+  .clear
+    clear: both
+
+  .wrapper
+    width: 73%
+    margin: 2% auto
+
+  .formInfo
+    background-color: #fff
+    padding: 40px
+    border-radius: 6px
+
+
+  /*form
+
+  form input
+    &[type="text"], &[type="email"]
+      outline: none
+      appearance: none
+      -webkit-appearance: none
+      -o-appearance: none
+      -ms-appearance: none
+      background-color: transparent
+
+  button
+    outline: none
+    appearance: none
+    -webkit-appearance: none
+    -o-appearance: none
+    -ms-appearance: none
+    background-color: transparent
+
+  form
+    input, textarea
+      width: 100%
+      color: #666
+      border: none
+      border-bottom: 2px solid #ccc
+      margin-bottom: 12px !important
+      margin: 0 auto
+      padding: 12px
+      padding-left: 6px
+      padding-bottom: 6px
+      border-radius: 0
+    input, textarea, button
+      opacity: .8
+      -webkit-transition: all .8s
+      -moz-transition: all .8s
+      -o-transition: all .8s
+      -ms-transition: all .8s
+      transition: all .8s
+
+  a
+    opacity: .8
+    -webkit-transition: all .8s
+    -moz-transition: all .8s
+    -o-transition: all .8s
+    -ms-transition: all .8s
+    transition: all .8s
+
+  form button
+    background-color: #0971b7
+    text-align: center
+    color: #fff
+    border-radius: 0
+    box-shadow: none
+    border: none
+    width: 100%
+    padding: 12px
+    margin-top: 4%
+    margin-bottom: 5%
+
+  input:focus, textarea:focus, select:focus, input:hover, textarea:hover, form button:hover, a:hover
+    opacity: 1
+    outline: none
+    appearance: none
+    -webkit-appearance: none
+    -o-appearance: none
+    -ms-appearance: none
+    display: inline-block
+    border-color: #0971b7
+    -webkit-box-shadow: none
+    -moz-box-shadow: none
+    -o-box-shadow: none
+    -ms-box-shadow: none
+    box-shadow: none !important
+
+  /*end form
+
+  /*infoCard
+
+  .infoCard
+    margin: 0 auto
+    display: block
+    text-align: center
+    font-size: 1.2em
+    font-weight: 700
+    img
+      border-radius: 50%
+      border: 4px solid #0971b7
+      margin-bottom: 12px
+    a
+      color: #0971b7
+      text-decoration: none
+      &:hover
+        color: #0971b7
+        text-decoration: none
+    p
+      color: #878584
+      margin-bottom: 0
+
+  ul.social
+    padding: 0
+    list-style-type: none
+    margin: 0 auto
+    margin-top: 12px
+    width: 150px
+    li
+      display: inline-block
+      width: 33,3333%
+      margin-bottom: 6px
+      .fa
+        color: #fff
+        background-color: #0971b7
+        border-radius: 50%
+        width: 30px
+        height: 30px
+        vertical-align: top
+        padding-top: 8px
+
+  /*end infoCard
+
+
+
+
 
 
 
@@ -350,7 +616,13 @@ body
   color: #fff !important
   .cont-parrafo
     min-height: 140px
-
+  .imagen-plan
+    margin: 10px auto 20px auto
+    img
+      height: 130px
+      display: block
+      margin-left: auto
+      margin-right: auto
   ul
     padding: 0
     margin: 30px 0px
@@ -397,6 +669,39 @@ body
     margin: 0
     font-size: 15px
     font-weight: lighter
+  h2
+    text-align: center
+    font-weight: 300
+    font-size: 20px
+    text-transform: uppercase
+    font-weight: 200
+    min-height: 40px
+    margin: 0px 0px 20px 0px
+    padding: 0px
+
+  .section-title
+    margin: 0px 0px 20px 0px
+    padding-top: 50px
+    padding-bottom: 50px
+
+
+.team-cont
+  font-family: 'Lato',Helvetica,Arial,Lucida,sans-serif
+  font-weight: 100
+
+  color: #fff !important
+  .cont-parrafo
+    min-height: 100px
+
+  ul
+    padding: 0
+    margin: 30px 0px
+  p
+    padding: 0
+    margin: 0
+    font-size: 16px
+    font-weight: lighter
+    color: #fff !important
   h2
     text-align: center
     font-weight: 300
@@ -491,16 +796,21 @@ body
   padding: 15px 0px 0px 0px
 
 
-
-
-
-
-
-
-
-
-
-
+footer
+  padding: 40px 0
+  color: white
+  background: #162029
+  li
+    float: left
+    padding: 0 10px
+    list-style: none
+  a
+    color: white
+    text-decoration: none
+    &:hover
+      text-decoration: none
+  p
+    float: right
 
 // estilos antiguos json
 
@@ -602,3 +912,44 @@ section
 
 text-capitalize
   text-transform: capitalize
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 768px)
+  .boton-movil
+    display: none
+  header
+      height: 100px
+  .header-net
+    .navbar-collapse
+      padding: 0px 0px 0px 0px
+
+
+  .home-slider
+    padding: 0px
+    margin: 0px
+    min-height: 320px
+    img
+      object-fit: cover
+      height: 320px
+    .img-responsive
+      display: block
+      width: 100%
+      height: auto
+    .carousel-caption
+      position: absolute
+      right: 15%
+      bottom: 50px
+      left: 15%
+      z-index: 10
+      padding-top: 20px
+      padding-bottom: 20px
+      color: #fff
+      text-align: left
+      font-size: 16px
+    .carousel-inner
+      min-height: 320px
+
+
+
+
+
+  /* Styles
