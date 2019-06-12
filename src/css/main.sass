@@ -905,6 +905,34 @@ text-capitalize
   text-transform: capitalize
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 768px)
+  .seccion-contacto
+    .clear
+      clear: both
+
+    .wrapper
+      width: 100%
+      margin: 0 auto
+
+    .formInfo
+      background-color: #fff
+      padding: 40px
+      border-radius: 6px
+  .boton-solicitar
+    padding: 0
+    margin: 0
+    display: block
+    .btn:not(:disabled):not(.disabled)
+
+      cursor: pointer
+      width: 300px
+      font-size: 12px !important
+
+
+    .btn
+      width: 300px !important
+      font-size: 12px
+    a
+      width: 300px !important
   .boton-movil
     display: none
   header
@@ -918,6 +946,10 @@ text-capitalize
     padding: 0px
     margin: 0px
     min-height: 320px
+    p
+      font-size: 20px
+    h5
+      font-size: 45px
     img
       object-fit: cover
       height: 320px

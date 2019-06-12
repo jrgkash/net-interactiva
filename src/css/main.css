@@ -854,6 +854,30 @@ text-capitalize {
   text-transform: capitalize; }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
+  .seccion-contacto .clear {
+    clear: both; }
+  .seccion-contacto .wrapper {
+    width: 100%;
+    margin: 0 auto; }
+  .seccion-contacto .formInfo {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 6px; }
+
+  .boton-solicitar {
+    padding: 0;
+    margin: 0;
+    display: block; }
+    .boton-solicitar .btn:not(:disabled):not(.disabled) {
+      cursor: pointer;
+      width: 300px;
+      font-size: 12px !important; }
+    .boton-solicitar .btn {
+      width: 300px !important;
+      font-size: 12px; }
+    .boton-solicitar a {
+      width: 300px !important; }
+
   .boton-movil {
     display: none; }
 
@@ -867,6 +891,10 @@ text-capitalize {
     padding: 0px;
     margin: 0px;
     min-height: 320px; }
+    .home-slider p {
+      font-size: 20px; }
+    .home-slider h5 {
+      font-size: 45px; }
     .home-slider img {
       object-fit: cover;
       height: 320px; }
