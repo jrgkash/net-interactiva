@@ -5,21 +5,32 @@ html {
   scroll-behavior: smooth; }
 
 header {
-  height: 100px; }
+  height: 156px;
+  margin: 0px;
+  padding: 0px; }
+  header img {
+    height: 75px !important; }
+
+.nav-net {
+  width: 100%;
+  background: #2e5cc1;
+  min-height: 40px;
+  padding: 0px 0px 0px 0px;
+  margin: 0px;
+  z-index: 10010; }
+  .nav-net .nav-link {
+    color: #fff !important;
+    width: 180px;
+    text-align: center; }
+    .nav-net .nav-link:hover {
+      opacity: 0.6; }
 
 .header-net {
   background: white;
-  min-height: 100px;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1000; }
-  .header-net .navbar-collapse {
-    padding: 0px 0px 0px 300px; }
+  min-height: auto;
+  width: 100%; }
   .header-net .nav-link {
     color: #606E7C !important; }
-  .header-net img {
-    height: 80px !important; }
 
 #myBtn {
   display: none;
@@ -40,7 +51,7 @@ header {
 
 .home-slider {
   padding: 0px;
-  margin: 0px;
+  margin: 156px 0px 0px 0px;
   min-height: 420px; }
   .home-slider p {
     font-size: 20px; }
@@ -853,7 +864,7 @@ section {
 text-capitalize {
   text-transform: capitalize; }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
   .seccion-contacto .clear {
     clear: both; }
   .seccion-contacto .wrapper {
@@ -881,20 +892,29 @@ text-capitalize {
   .boton-movil {
     display: none; }
 
-  header {
-    height: 100px; }
+  .nav-net {
+    min-height: 0; }
 
-  .header-net .navbar-collapse {
-    padding: 0px 0px 0px 0px; }
+  header {
+    height: auto; }
+    header img {
+      height: 60px !important; }
+    header .nav-link {
+      text-align: left !important; }
+
+  .header-net {
+    min-height: auto; }
+    .header-net .navbar-collapse {
+      padding: 0px 0px 0px 0px; }
 
   .home-slider {
     padding: 0px;
-    margin: 0px;
+    margin: 200px 0px 0px 0px;
     min-height: 320px; }
     .home-slider p {
       font-size: 20px; }
     .home-slider h5 {
-      font-size: 45px; }
+      font-size: 35px; }
     .home-slider img {
       object-fit: cover;
       height: 320px; }
@@ -915,6 +935,204 @@ text-capitalize {
       font-size: 16px; }
     .home-slider .carousel-inner {
       min-height: 320px; }
+
+  .quienes-cont {
+    margin: 10px 0px 10px 0px; }
+    .quienes-cont h2 {
+      margin: 0px 0px 20px 0px; }
+
+  .img-cont {
+    color: #fff !important;
+    width: 100%;
+    min-height: 300px;
+    margin: 0px 0px 20px 0px; }
+
+  .img-cont2 {
+    color: #fff !important;
+    width: 100%;
+    min-height: 300px;
+    margin: 0px 0px 20px 0px; }
+
+  .img-cont3 {
+    color: #fff !important;
+    width: 100%;
+    min-height: 300px;
+    margin: 0px 0px 20px 0px; }
+
+  .img-cont4 {
+    color: #fff !important;
+    width: 100%;
+    min-height: 300px;
+    margin: 0px 0px 20px 0px; }
+
+  .seccion-visitas {
+    padding: 1px 0px 1px 0px; }
+    .seccion-visitas h1 {
+      font-size: 25px; }
+
+  .h-margin-row {
+    margin: 20px 0px 20px 0px; }
+
+  .planes-titulo h1 {
+    font-size: 30px; }
+
+  .planes-cont {
+    margin: 10px 0px; }
+    .planes-cont .cont-parrafo {
+      min-height: 100px; }
+    .planes-cont h2 {
+      margin: 0px; }
+    .planes-cont .imagen-plan img {
+      height: 70px; }
+
+  .img-plan img {
+    height: 60px; }
+
+  .seccion-banner h2 {
+    font-size: 24px !important; }
+
+  .seccion-cctv .cctv-titulo h1 {
+    font-size: 25px; }
+  .seccion-cctv .cctv-subtitulo h2 {
+    font-size: 18px !important; }
+
+  .cctv-cont {
+    margin: 10px 0px 10px 0px;
+    padding-top: 0px !important; }
+    .cctv-cont img {
+      height: 120px; }
+
+  .seccion-clientes .clientes-img {
+    padding-top: 0px;
+    margin: 7px auto; }
+    .seccion-clientes .clientes-img img {
+      width: 80%;
+      margin: 0px auto; }
+
+  .seccion-team .team-titulo h1 {
+    font-size: 33px; }
+  .seccion-team .team-subtitulo h3 {
+    font-size: 18px !important; } }
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  header {
+    height: auto; }
+    header img {
+      height: 55px !important; }
+
+  .nav-net {
+    height: auto; }
+
+  .header-net {
+    height: auto; }
+    .header-net .navbar-collapse {
+      padding: 0px 0px 0px 0px; }
+
+  .home-slider {
+    padding: 0px;
+    margin: 0px 0px 0px 0px;
+    min-height: 410px; }
+    .home-slider p {
+      font-size: 20px; }
+    .home-slider h5 {
+      font-size: 35px; }
+    .home-slider img {
+      object-fit: cover;
+      height: 410px; }
+    .home-slider .img-responsive {
+      display: block;
+      width: 100%;
+      height: auto; }
+    .home-slider .carousel-caption {
+      position: absolute;
+      right: 15%;
+      bottom: 50px;
+      left: 15%;
+      z-index: 10;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      color: #fff;
+      text-align: left;
+      font-size: 16px; }
+    .home-slider .carousel-inner {
+      min-height: 320px; }
+
+  .quienes-cont {
+    margin: 10px 0px 10px 0px; }
+
+  .cont-parrafo {
+    min-height: 220px !important; }
+    .cont-parrafo h2 {
+      margin: 0px 0px 20px 0px; }
+
+  .planes-titulo h1 {
+    font-size: 30px; }
+
+  .planes-cont {
+    margin: 10px 0px;
+    height: 270px; }
+    .planes-cont .cont-parrafo {
+      min-height: 10px; }
+    .planes-cont h2 {
+      margin: 0px; }
+    .planes-cont .imagen-plan img {
+      height: 70px; }
+
+  .seccion-banner h2 {
+    font-size: 24px !important; }
+
+  .seccion-cctv .cctv-titulo h1 {
+    font-size: 25px; }
+  .seccion-cctv .cctv-subtitulo h2 {
+    font-size: 18px !important; }
+
+  .cctv-cont {
+    margin: 10px 0px 10px 0px;
+    padding-top: 0px !important;
+    height: 320px; }
+    .cctv-cont .cctv-titulo h1 {
+      font-size: 25px !important; }
+    .cctv-cont img {
+      height: 150px;
+      margin: 10px 0px 10px 0px; }
+
+  .seccion-contacto h1 {
+    font-size: 25px !important; }
+  .seccion-contacto .clear {
+    clear: both; }
+  .seccion-contacto .wrapper {
+    width: 100%;
+    margin: 0 auto; }
+  .seccion-contacto .formInfo {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 6px; }
+
+  .seccion-visitas {
+    padding: 1px 0px 1px 0px; }
+
+  .img-cont {
+    color: #fff !important;
+    width: 100%;
+    min-height: 300px;
+    margin: 0px 0px 20px 0px; }
+
+  .img-cont2 {
+    color: #fff !important;
+    width: 100%;
+    min-height: 300px;
+    margin: 0px 0px 20px 0px; }
+
+  .img-cont3 {
+    color: #fff !important;
+    width: 100%;
+    min-height: 300px;
+    margin: 0px 0px 20px 0px; }
+
+  .img-cont4 {
+    color: #fff !important;
+    width: 100%;
+    min-height: 300px;
+    margin: 0px 0px 20px 0px; }
 
   /* Styles */ }
 
