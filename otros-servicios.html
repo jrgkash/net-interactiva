@@ -15,17 +15,12 @@
   <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-
-
   <script type="text/javascript" src="./bower_components/jquery/dist/jquery.js"></script>
   <script type="text/javascript" src="./bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
-  <script src="./bower_components/angular/angular.js"></script>
-  <script src="./bower_components/angular-route/angular-route.js"></script>
   <!-- <script data-require="angular.js@1.2.28" data-semver="1.2.28" src="https://code.angularjs.org/1.2.28/angular.js"></script>
    <script data-require="angular-route@1.2.28" data-semver="1.2.28" src="https://code.angularjs.org/1.2.28/angular-route.js"></script> -->
    <link rel="stylesheet" href="style.css" />
-  <script src="./src/js/controller.js"></script>
   <script type="text/javascript">
     $('#myModal').on('shown.bs.modal', function () {
       $('#myInput').trigger('focus')
@@ -89,20 +84,6 @@
       <!-- Additional container -->
 
     </nav>
-    <!-- <div class="container">
-      <div class="row">
-        <div class="col-sm-10">
-            <a class="" href="#"><img src="./src/images/logos/logo-new.png" alt="logo net interactiva" class="img-responsive logo"/></a>
-        </div>
-        <div class="col-xs-2">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
-            aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        </div>
-
-      </div>
-    </div> -->
     <div class="nav-net">
       <div class="container">
         <div class="row">
@@ -120,19 +101,22 @@
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#servicio">Nuestros servicios</a>
+                    <a class="nav-link" href="#electricidad">Electricidad</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#clientes">Nuestros clientes</a>
+                    <a class="nav-link" href="#senales">Señales Debiles</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#equipo">Nuestro equipo</a>
+                    <a class="nav-link" href="#aire">Aire acondicionado</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Net Interactiva <i class="material-icons">arrow_right</i> </a>
+                    <a class="nav-link" href="#control">Control Industrial</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#contacto">Contacto</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./index.html">Volver al home <i class="material-icons">arrow_right</i> </a>
                   </li>
                 </ul>
               </div>
@@ -154,7 +138,7 @@
   </div>
 </section>
 <!--Fin seccion banner -->
-
+<div id="electricidad"></div>
 <!-- seccion electricidad -->
 <section class="seccion-electricidad">
   <div class='container-fluid'>
@@ -235,9 +219,7 @@
   </div>
 </section>
 <!-- fin seccion electricidad -->
-
-<div id="servicio"></div>
-
+<div id="senales"></div>
 <!-- seccion señales debiles -->
 <section class="seccion-sign">
   <div class='container-fluid'>
@@ -312,268 +294,95 @@
 </section>
 <!--fin seccion señales debiles -->
 
-
-<!-- seccion planes -->
-<section class="seccion-planes">
+<div id="aire"></div>
+<!-- seccion aire -->
+<section class="seccion-air">
   <div class='container-fluid'>
     <div class="row">
-      <div class="col-xs-12 planes-titulo">
-        <h1 class="">Planes Mantención</h1>
-
+      <div class="col-xs-12 col-md-6 col-lg-6 air-titulo">
+        <h1 class="">Aire Acondicionado</h1>
       </div>
-      <div class="col-xs-12 planes-subtitulo">
-        <h3>Servicio especializado para empresas MIPYME que requieran a un partner tecnológico con atención 24/7. </h3>
-      </div>
-
-    </div>
-    <div class="row">
-      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
-        <div class="planes-cont">
-          <div class="imagen-plan" >
-            <img src="src/images/web/plan-01.png" alt="" class="img-responsive">
-          </div>
-          <h2>Inventario Inicial</h2>
-          <div class="cont-parrafo">
-            <p>Se realiza una revisión completa de los equipos y sistemas para luego entregar un informe de mejoras. </p>
-          </div>
-
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+        <div class="air-cont">
+          <h2>Equipos de climatizacion y Refrigeracion en general, servicios de mantencion, instalacion, reparacion e instalacion.</h2>
         </div>
-      </div>
-      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
-        <div class="planes-cont">
-          <div class="imagen-plan" >
-            <img src="src/images/web/plan-02.png" alt="" class="img-responsive">
-          </div>
-          <h2>Informe con mejoras a realizar</h2>
-          <div class="cont-parrafo">
-            <p>Se estabilizan equipos y sistemas mejorando su desempeño y respuesta de acuerdo al informe presentado.  </p>
-          </div>
-
-        </div>
-      </div>
-      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
-        <div class="planes-cont">
-          <div class="imagen-plan" >
-            <img src="src/images/web/plan-03.png" alt="" class="img-responsive">
-          </div>
-          <h2>Mantenciones Preventivas y Correctivas</h2>
-          <div class="cont-parrafo">
-            <p>Soporte programado y de emergencia para usuarios. Opera tanto de forma remota como en visitas a terreno con atención personalizada permanente. </p>
-          </div>
-
-        </div>
-      </div>
-
-      <div class="col">
-          <div class="row h-margin-row img-plan">
-              <div class="col d-flex justify-content-center">
-                  <img src="src/images/web/tmv.png" alt="" height="80">
-                  <img src="src/images/web/monitoring.png" alt="" height="80">
-                  <img src="src/images/web/osticket.png" alt="" height="80">
-              </div>
-          </div>
-          <div class="row mt-3">
-              <div class="col d-flex justify-content-center">
-                  <p>TODOS NUESTROS PLANES CUENTAN CON SERVICIO DE CONEXIÓN REMOTA Y SISTEMA DE TICKETS PARA UNA MEJOR ATENCIÓN</p>
-              </div>
-          </div>
-          <div class="row boton-solicitar">
-              <div class="col d-flex justify-content-center ">
-                  <a class="btn bg-blue-corp btn-lg cl-white text-uppercase" data-toggle="modal" data-target="#modalsolicitud">solicite nuestra propuesta comercial</a>
-              </div>
-          </div>
       </div>
 
     </div>
   </div>
-  <!-- Modal -->
-  <div class="modal fade seccion-contacto-modal" id="modalsolicitud" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Solicitud de propuesta</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <form id="contact-us" method="post" action="#">
-              <!-- Left Inputs -->
-              <div class="form-group">
-                <input class="name" type="text" name="nombre" placeholder="Nombre" required >
-                <input class="email" type="email" name="email" placeholder="Email" required>
-                <input class="phone" type="tel" name="fono" placeholder="Telefono fijo o celular:" required>
-                <textarea class="message" name="mensaje" id="message" cols="30" rows="3" placeholder="Mensaje"
-                required></textarea>
-              </div><!-- end form-group -->
-          </form>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-          <button type="button" class="btn btn-primary">Enviar</button>
-        </div>
+<!-- fin seccion aire -->
+
+
+<!-- Modal -->
+<div class="modal fade seccion-contacto-modal" id="modalsolicitud" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Solicitud de propuesta</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form id="contact-us" method="post" action="#">
+            <!-- Left Inputs -->
+            <div class="form-group">
+              <input class="name" type="text" name="nombre" placeholder="Nombre" required >
+              <input class="email" type="email" name="email" placeholder="Email" required>
+              <input class="phone" type="tel" name="fono" placeholder="Telefono fijo o celular:" required>
+              <textarea class="message" name="mensaje" id="message" cols="30" rows="3" placeholder="Mensaje"
+              required></textarea>
+            </div><!-- end form-group -->
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+        <button type="button" class="btn btn-primary">Enviar</button>
       </div>
     </div>
   </div>
-</section>
-<!-- fin seccion planes -->
-
-
-
-<!-- seccion-google -->
-<section class="seccion-google">
-  <div class='container-fluid'>
-    <div class="row h-margin-row">
-      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
-        <div class="img-cont4 img-responsive"></div>
-      </div>
-      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
-        <div class="d-flex">
-          <h1>Proyectos</h1>
-        </div>
-        <h2>Enfocados a la seguridad y mejora continua de la tecnologia de su empresa. </h2>
-        <div class="google-contenido">
-          <h3>Migración de servicios de correo a google apps for work</h3>
-          <p> Google apps for work le permitira conectarse desde cualquier computador o smartphone a su correo electronico, google drive, calendario.
-          </p>
-          <h3>Nuestros servicios incluyen:</h3>
-          <p>
-            <ul>
-                <li>Activación del dominio en los servidores de google</li>
-                <li>Cambios en hosting del cliente</li>
-                <li>Creación de las cuentas de correo en google</li>
-                <li>Migración de los correos, contactos, calendario del cliente a través del software G Suite Migration for Microsoft Outlook®</li>
-                <li>Configuración y descarga de los correos, contactos, calendario a traves del software Google Apps Sync for Microsoft Outlook® .</li>
-                <li>Configuración SPF, DKIM, DMARC asegurando la llegada de los correos a los clientes.</li>
-            </ul>
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- fin seccion-google -->
-
-
-<div id="clientes">
-
 </div>
-<!-- seccion clientes -->
-<section class="seccion-clientes" >
-  <div class='container-fluid'>
-    <div class="row">
-      <div class="col-xs-12 planes-titulo">
-        <h1 class="">Nuestros clientes</h1>
-
-      </div>
-      <div class="col-xs-12 planes-subtitulo">
-        <h3>Somos más que un proveedor de servicios, somos un partner tecnológico siempre presente, somos NETINTERACTIVA.  </h3>
-      </div>
-
-    </div>
-    <div class="row">
-      <div class="col-xs-6 col-sm-4 col-sm-4 col-lg-3  ">
-        <div class="clientes-img">
-          <img src="src/images/web/logos-net.png" alt=""  class="img-responsive">
-        </div>
-      </div>
-      <div class="col-xs-6 col-sm-4 col-sm-4 col-lg-3  ">
-        <div class="clientes-img">
-          <img src="src/images/web/logos-net02.png" alt=""  class="img-responsive">
-        </div>
-      </div>
-      <div class="col-xs-6 col-sm-4 col-sm-4 col-lg-3  ">
-        <div class="clientes-img">
-          <img src="src/images/web/logos-net03.png" alt=""  class="img-responsive">
-        </div>
-      </div>
-      <div class="col-xs-6 col-sm-4 col-sm-4 col-lg-3  ">
-        <div class="clientes-img">
-          <img src="src/images/web/logos-net04.png" alt=""  class="img-responsive">
-        </div>
-      </div>
-      <div class="col-xs-6 col-sm-4 col-sm-4 col-lg-3  ">
-        <div class="clientes-img">
-          <img src="src/images/web/logos-net05.png" alt=""  class="img-responsive">
-        </div>
-      </div>
-      <div class="col-xs-6 col-sm-4 col-sm-4 col-lg-3  ">
-        <div class="clientes-img">
-          <img src="src/images/web/logos-net06.png" alt=""  class="img-responsive">
-        </div>
-      </div>
-      <div class="col-xs-6 col-sm-4 col-sm-4 col-lg-3  ">
-        <div class="clientes-img">
-          <img src="src/images/web/logos-net07.png" alt=""  class="img-responsive">
-        </div>
-      </div>
-      <div class="col-xs-6 col-sm-4 col-sm-4 col-lg-3  ">
-        <div class="clientes-img">
-          <img src="src/images/web/logos-net08.png" alt=""  class="img-responsive">
-        </div>
-      </div>
-    </div>
-
-  </div>
 </section>
-<!--fin seccion clientes -->
-<div id="equipo">
 
-</div>
-<!-- seccion team -->
-<section class="seccion-team" >
+<div id="control"></div>
+<!-- seccion control -->
+<section class="seccion-control" >
   <div class='container-fluid'>
     <div class="row">
-      <div class="col-xs-12 team-titulo">
-        <h1 class="">Nuestro equipo</h1>
-      </div>
-      <div class="col-xs-12 team-subtitulo">
-        <h3>Nuestra empresa está conformada por personas altamente calificadas para poder entregar el mejor servicio que usted se merece.</h3>
+      <div class="col-xs-12 control-titulo">
+        <h1 class="">Control Industrial</h1>
       </div>
     </div>
-    <div class="row mt-5 team-cont">
-        <div class="col">
-            <div class="profile d-flex justify-content-center flex-column">
-              <h2>Coordinador General Informática</h2>
-                <div class="picture rounded-circle mx-auto">
-                    <figure>
-                        <img src="src/images/equipo/daniel_orellana.jpg" alt="">
-                        <figcaption>
-                            Daniel Orellana
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="name text-center my-2">Daniel Orellana</div>
-                <p class=" text-justify">
-                  Técnico en Computación e Informática, egresado y titulado el año 2015 con distinción máxima. Con vasta experiencia en los distintos aspectos del trabajo informático para distintas empresas.
-                </p>
-            </div>
+    <div class="row  ">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+        <div class="control-cont">
+          <h2>Monitoreo y Control de Sistema de Agua 	</h2>
+          <div class="control-parrafo">
+            <p>Revision de sistemas de climatizacion, regularizando la temperatura adecuada y goteo de las redes mencionadas.		</p>
+          </div>
         </div>
-        <div class="col">
-            <div class="profile d-flex justify-content-center flex-column mt-4 mt-sm-0">
-                <h2>Relacionador Comercial</h2>
-
-                <div class="picture rounded-circle mx-auto">
-                    <figure>
-                        <img src="src/images/equipo/gustavo_avila.jpg" alt="" class="img-responsive">
-                        <figcaption>
-                            Gustavo Avila
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="name text-center my-2">Gustavo Ávila</div>
-                <p class=" text-justify">
-                  Técnico Financiero. Ejecutivo de ventas. Con la mejor disposición a entregar la mejor orientación para las mejoras informáticas de nuestros clientes.
-                </p>
-            </div>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+        <div class="control-cont">
+          <h2>Monitoreo y Control de Sistema Aire Acodicionado	</h2>
+          <div class="control-parrafo">
+            <p>Revision de sistemas de climatizacion, regularizando la temperatura adecuada y goteo de las redes mencionadas.		.</p>
+          </div>
         </div>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
+        <div class="control-cont">
+          <h2>Monitoreo de Tableros Electricos	</h2>
+          <div class="control-parrafo">
+            <p>Chequeo de un funcionamiento optico de los tableros.		</p>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
-<!-- fin seccion team -->
-<div id="contacto">
-
-</div>
+<!-- fin seccion control -->
+<div id="contacto"></div>
 <!-- contacto -->
 <section class="seccion-contacto" >
   <div class='container-fluid'>
