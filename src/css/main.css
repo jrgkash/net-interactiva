@@ -8,6 +8,10 @@ header {
   height: 156px;
   margin: 0px;
   padding: 0px; }
+  header i {
+    margin: 0px;
+    top: 17px;
+    position: absolute; }
   header img {
     height: 75px !important; }
 
@@ -31,6 +35,11 @@ header {
   width: 100%; }
   .header-net .nav-link {
     color: #606E7C !important; }
+
+.h-cneter-vert {
+  padding: 50px 0px 0px 0px !important; }
+  .h-cneter-vert h2 {
+    padding: 50px 0px 0px 0px !important; }
 
 #myBtn {
   display: none;
@@ -241,6 +250,25 @@ header {
     width: 100%;
     font-size: 10px !important; }
 
+.seccion-banner2 {
+  width: 100%;
+  padding: 200px 0px 50px 0px;
+  margin: 0px 0px 0px 0px;
+  background: #1a2530;
+  min-height: 50px; }
+  .seccion-banner2 h2 {
+    font-size: 40px !important;
+    font-weight: lighter;
+    font-weight: 300 !important; }
+  .seccion-banner2 .banner-titulo {
+    color: white !important;
+    text-align: center !important;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0px auto;
+    width: 100%;
+    font-size: 10px !important; }
+
 .seccion-cctv {
   width: 100%;
   padding-top: 50px;
@@ -278,6 +306,79 @@ header {
       margin: 0px 0px 20px 0px;
       color: #eee !important;
       opacity: 0.8; }
+
+.seccion-sign {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin: 0px;
+  background: url(../images/web/fondo-cctv.png);
+  /* Set a specific height */
+  min-height: 550px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .seccion-sign .sign-titulo {
+    color: #fff;
+    text-align: center !important;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0px auto;
+    width: 100%; }
+  .seccion-sign .sign-subtitulo {
+    color: #eee;
+    text-align: center !important;
+    padding: 0;
+    margin: 10px auto; }
+    .seccion-sign .sign-subtitulo h2 {
+      font-size: 27px !important;
+      width: 100%;
+      margin: 0px 0px 20px 0px;
+      color: #eee !important;
+      opacity: 0.8; }
+    .seccion-sign .sign-subtitulo h3 {
+      font-size: 20px !important;
+      width: 100%;
+      margin: 0px 0px 20px 0px;
+      color: #eee !important;
+      opacity: 0.8; }
+  .seccion-sign .sign-cont {
+    font-family: "Lato", Helvetica, Arial, Lucida, sans-serif;
+    font-weight: 100;
+    background-color: rgba(77, 77, 77, 0.2);
+    border-radius: 10px 10px 10px 10px;
+    overflow: hidden;
+    border: solid 3px #fff;
+    padding-top: 20px !important;
+    padding-right: 25px !important;
+    padding-bottom: 0px !important;
+    padding-left: 25px !important;
+    color: #fff !important;
+    min-height: 220px;
+    margin: 20px 0px 20px 0px; }
+    .seccion-sign .sign-cont ul {
+      padding: 0;
+      margin: 30px 0px; }
+    .seccion-sign .sign-cont p {
+      padding: 0;
+      margin: 0;
+      font-size: 18px;
+      font-weight: 300 !important; }
+    .seccion-sign .sign-cont h2 {
+      text-align: center;
+      font-weight: 300;
+      font-size: 23px;
+      text-transform: uppercase;
+      font-weight: 200;
+      min-height: 40px;
+      margin: 0px 0px 20px 0px;
+      padding: 0px; }
+    .seccion-sign .sign-cont .section-title {
+      margin: 0px 0px 20px 0px;
+      padding-top: 50px;
+      padding-bottom: 50px; }
 
 .seccion-clientes {
   width: 100%;
@@ -368,9 +469,9 @@ header {
   padding-top: 50px;
   padding-bottom: 50px;
   margin: 0px;
-  background: url(../images/web/fondo-contacto.png);
+  background: url(../images/web/fondo-contacto2.png);
   /* Set a specific height */
-  min-height: 550px;
+  min-height: 500px;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
@@ -380,6 +481,10 @@ header {
   /*end form */
   /*infoCard */
   /*end infoCard */ }
+  .seccion-contacto textarea {
+    overflow: auto;
+    resize: vertical;
+    background: none; }
   .seccion-contacto li {
     font-size: 16px !important;
     width: 100%;
@@ -393,14 +498,14 @@ header {
     color: #184069;
     opacity: 0.9; }
   .seccion-contacto .contacto-titulo {
-    color: #184069;
+    color: #FFF;
     text-align: center !important;
     text-transform: uppercase;
     padding: 0;
     margin: 0px auto;
     width: 100%; }
   .seccion-contacto .contacto-subtitulo {
-    color: #184069;
+    color: #FFF;
     text-align: center !important;
     padding: 0;
     margin: 10px auto; }
@@ -408,13 +513,13 @@ header {
       font-size: 27px !important;
       width: 100%;
       margin: 0px 0px 20px 0px;
-      color: #184069;
+      color: #FFF;
       opacity: 0.9; }
     .seccion-contacto .contacto-subtitulo h3 {
       font-size: 20px !important;
       width: 100%;
       margin: 0px 0px 20px 0px;
-      color: #184069;
+      color: #FFF;
       opacity: 0.9; }
   .seccion-contacto .clear {
     clear: both; }
@@ -422,8 +527,8 @@ header {
     width: 73%;
     margin: 2% auto; }
   .seccion-contacto .formInfo {
-    background-color: #fff;
-    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 50px 40px 0px 40px;
     border-radius: 6px; }
   .seccion-contacto form input[type="text"], .seccion-contacto form input[type="email"] {
     outline: none;
@@ -526,6 +631,164 @@ header {
         height: 30px;
         vertical-align: top;
         padding-top: 8px; }
+
+.seccion-contacto-modal {
+  /*form */
+  /*end form */
+  /*infoCard */
+  /*end infoCard */ }
+  .seccion-contacto-modal .clear {
+    clear: both; }
+  .seccion-contacto-modal .wrapper {
+    width: 73%;
+    margin: 2% auto; }
+  .seccion-contacto-modal .formInfo {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 6px; }
+  .seccion-contacto-modal form input[type="text"], .seccion-contacto-modal form input[type="email"] {
+    outline: none;
+    appearance: none;
+    -webkit-appearance: none;
+    -o-appearance: none;
+    -ms-appearance: none;
+    background-color: transparent; }
+  .seccion-contacto-modal form input, .seccion-contacto-modal form textarea {
+    width: 100%;
+    color: #666;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    margin-bottom: 12px !important;
+    margin: 0 auto;
+    padding: 12px;
+    padding-left: 6px;
+    padding-bottom: 6px;
+    border-radius: 0; }
+  .seccion-contacto-modal form input, .seccion-contacto-modal form textarea, .seccion-contacto-modal form button {
+    opacity: 0.8;
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    -ms-transition: all 0.8s;
+    transition: all 0.8s; }
+  .seccion-contacto-modal a {
+    opacity: 0.8;
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    -ms-transition: all 0.8s;
+    transition: all 0.8s; }
+  .seccion-contacto-modal form button {
+    background-color: #0971b7;
+    text-align: center;
+    color: #fff;
+    border-radius: 0;
+    box-shadow: none;
+    border: none;
+    width: 100%;
+    padding: 12px;
+    margin-top: 4%;
+    margin-bottom: 5%; }
+  .seccion-contacto-modal input:focus, .seccion-contacto-modal textarea:focus, .seccion-contacto-modal select:focus, .seccion-contacto-modal input:hover, .seccion-contacto-modal textarea:hover, .seccion-contacto-modal form button:hover, .seccion-contacto-modal a:hover {
+    opacity: 1;
+    outline: none;
+    appearance: none;
+    -webkit-appearance: none;
+    -o-appearance: none;
+    -ms-appearance: none;
+    display: inline-block;
+    border-color: #0971b7;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -o-box-shadow: none;
+    -ms-box-shadow: none;
+    box-shadow: none !important; }
+  .seccion-contacto-modal .infoCard {
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 700; }
+    .seccion-contacto-modal .infoCard img {
+      border-radius: 50%;
+      border: 4px solid #0971b7;
+      margin-bottom: 12px; }
+    .seccion-contacto-modal .infoCard a {
+      color: #0971b7;
+      text-decoration: none; }
+      .seccion-contacto-modal .infoCard a:hover {
+        color: #0971b7;
+        text-decoration: none; }
+    .seccion-contacto-modal .infoCard p {
+      color: #878584;
+      margin-bottom: 0; }
+  .seccion-contacto-modal ul.social {
+    padding: 0;
+    list-style-type: none;
+    margin: 0 auto;
+    margin-top: 12px;
+    width: 150px; }
+    .seccion-contacto-modal ul.social li {
+      display: inline-block;
+      width: 33, 3333%;
+      margin-bottom: 6px; }
+      .seccion-contacto-modal ul.social li .fa {
+        color: #fff;
+        background-color: #0971b7;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        vertical-align: top;
+        padding-top: 8px; }
+
+.seccion-electricidad {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin: 0px;
+  background: url(../images/web/fondo-quienes.png);
+  /* Set a specific height */
+  min-height: 550px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .seccion-electricidad .elect-cont {
+    font-family: "Lato", Helvetica, Arial, Lucida, sans-serif;
+    font-weight: 100;
+    background-color: rgba(77, 77, 77, 0.2);
+    border-radius: 10px 10px 10px 10px;
+    overflow: hidden;
+    border: solid 3px #fff;
+    padding-top: 20px !important;
+    padding-right: 25px !important;
+    padding-bottom: 0px !important;
+    padding-left: 25px !important;
+    color: #fff !important;
+    min-height: 280px;
+    margin: 20px 0px 0px 0px; }
+    .seccion-electricidad .elect-cont ul {
+      padding: 0;
+      margin: 30px 0px; }
+    .seccion-electricidad .elect-cont p {
+      padding: 0;
+      margin: 0;
+      font-size: 20px;
+      font-weight: 300; }
+    .seccion-electricidad .elect-cont h2 {
+      text-align: center;
+      font-weight: 900;
+      font-size: 25px;
+      text-transform: uppercase;
+      font-weight: 200;
+      height: 40px;
+      margin: 0px 0px 20px 0px;
+      padding: 0px; }
+    .seccion-electricidad .elect-cont .section-title {
+      margin: 0px 0px 20px 0px;
+      padding-top: 50px;
+      padding-bottom: 50px; }
 
 .titulo-secciones {
   color: #184069; }
@@ -897,6 +1160,8 @@ text-capitalize {
 
   header {
     height: auto; }
+    header i {
+      display: none; }
     header img {
       height: 60px !important; }
     header .nav-link {
@@ -939,6 +1204,11 @@ text-capitalize {
   .quienes-cont {
     margin: 10px 0px 10px 0px; }
     .quienes-cont h2 {
+      margin: 0px 0px 20px 0px; }
+
+  .elect-cont {
+    margin: 10px 0px 10px 0px; }
+    .elect-cont h2 {
       margin: 0px 0px 20px 0px; }
 
   .img-cont {
@@ -991,6 +1261,9 @@ text-capitalize {
   .seccion-banner h2 {
     font-size: 24px !important; }
 
+  .seccion-banner2 h2 {
+    font-size: 24px !important; }
+
   .seccion-cctv .cctv-titulo h1 {
     font-size: 25px; }
   .seccion-cctv .cctv-subtitulo h2 {
@@ -1018,6 +1291,8 @@ text-capitalize {
     height: auto; }
     header img {
       height: 55px !important; }
+    header i {
+      display: none; }
 
   .nav-net {
     height: auto; }
@@ -1057,6 +1332,9 @@ text-capitalize {
       min-height: 320px; }
 
   .quienes-cont {
+    margin: 10px 0px 10px 0px; }
+
+  .elect-cont {
     margin: 10px 0px 10px 0px; }
 
   .cont-parrafo {
