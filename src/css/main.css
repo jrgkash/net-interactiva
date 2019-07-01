@@ -24,6 +24,39 @@ header img {
   height: 85px !important;
 }
 
+.top-net {
+  background: #1c222e;
+  color: #fff;
+  height: 40px;
+  width: 100%;
+  margin: 0px 0px 0px 0px;
+}
+.top-net i {
+  margin: 0px 0px 0px 0px;
+  line-height: 40px;
+  padding: 0px 3px 0px 15px;
+  font-size: 16px;
+  float: right;
+}
+.top-net a {
+  line-height: 40px;
+  height: 40px;
+  float: right;
+  margin: 0px 7px;
+  font-weight: 300 !important;
+  font-size: 14px;
+  color: #fff !important;
+  text-transform: lowercase !important;
+}
+.top-net a img {
+  height: 20px !important;
+  margin: 0px;
+  padding: 0px;
+}
+.top-net a:hover {
+  opacity: 0.7;
+}
+
 .nav-net {
   width: 100%;
   background: #2e5cc1;
@@ -74,6 +107,10 @@ header img {
   visibility: hidden;
 }
 
+.h--margin-top {
+  margin-top: 50px !important;
+}
+
 #myBtn {
   display: none;
   position: fixed;
@@ -95,7 +132,7 @@ header img {
 
 .home-slider {
   padding: 0px;
-  margin: 157px 0px 0px 0px;
+  margin: 195px 0px 0px 0px;
   min-height: 400px;
 }
 .home-slider p {
@@ -403,7 +440,7 @@ header img {
   margin: 0px;
   background: url(../images/web/fondo-servelct.png);
   /* Set a specific height */
-  min-height: 550px;
+  min-height: 200px;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
@@ -488,9 +525,8 @@ header img {
   padding-bottom: 50px;
   margin: 0px;
   background: url(../images/web/fondo-clientes.png);
-  /* Set a specific height */
   min-height: 550px;
-  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -529,6 +565,53 @@ header img {
   margin: 20px auto;
 }
 .seccion-clientes .clientes-img img {
+  width: 80%;
+  margin: 0px auto 0 auto;
+}
+
+.seccion-trabajo {
+  width: 100%;
+  padding-top: 50px;
+  margin: 0px 0px 0px 0px;
+}
+.seccion-trabajo .modal-dialog {
+  max-width: 500px;
+  margin: 190px auto !important;
+}
+.seccion-trabajo .trabajo-titulo {
+  color: #184069;
+  text-align: center !important;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0px auto 40px auto;
+  width: 100%;
+}
+.seccion-trabajo .trabajo-subtitulo {
+  color: #184069;
+  text-align: center !important;
+  padding: 0;
+  margin: 0px auto;
+}
+.seccion-trabajo .trabajo-subtitulo h3 {
+  font-size: 20px !important;
+  width: 100%;
+  margin: 0px 0px 20px 0px;
+}
+.seccion-trabajo .trabajo-img {
+  font-family: "Lato", Helvetica, Arial, Lucida, sans-serif;
+  font-weight: 100;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 10px 10px 10px 10px;
+  overflow: hidden;
+  border: solid 3px #fff;
+  padding-top: 5px !important;
+  padding-right: 0px !important;
+  padding-bottom: 0px !important;
+  padding-left: 40px !important;
+  color: #fff !important;
+  margin: 20px auto;
+}
+.seccion-trabajo .trabajo-img img {
   width: 80%;
   margin: 0px auto 0 auto;
 }
@@ -1017,6 +1100,44 @@ header img {
   padding-bottom: 50px;
 }
 
+.seccion-certific {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin: 0px;
+  background: url(../images/web/fondo-aire2.png);
+  /* Set a specific height */
+  min-height: 250px;
+  /* Create the parallax scrolling effect */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.seccion-certific img {
+  height: 100px;
+  margin: 0px auto;
+  text-align: center;
+}
+.seccion-certific h1 {
+  text-align: center;
+  font-weight: 300;
+  font-size: 2.7rem;
+  text-transform: uppercase;
+  min-height: 70px;
+  margin: 0px 0px 20px 0px;
+  padding: 0px;
+  color: #184069;
+}
+.seccion-certific p {
+  text-align: center;
+  font-weight: 300;
+  font-size: 18px;
+  min-height: 30px;
+  margin: 20px 0px 20px 0px;
+  padding: 0px;
+  color: #184069;
+}
+
 .seccion-control {
   width: 100%;
   padding-top: 50px;
@@ -1114,7 +1235,7 @@ header img {
 .quienes-cont {
   font-family: "Lato", Helvetica, Arial, Lucida, sans-serif;
   font-weight: 100;
-  background-color: rgba(77, 77, 77, 0.2);
+  background-color: rgba(16, 63, 140, 0.6);
   border-radius: 10px 10px 10px 10px;
   overflow: hidden;
   border: solid 3px #fff;
@@ -1503,6 +1624,45 @@ text-capitalize {
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
+  .home-slider {
+    padding: 0px;
+    margin: 100px 0px 0px 0px !important;
+    min-height: 350px;
+  }
+  .home-slider img {
+    height: 350px !important;
+  }
+  .home-slider p {
+    font-size: 20px;
+  }
+  .home-slider h5 {
+    font-size: 65px;
+  }
+  .home-slider .img-responsive {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .home-slider .carousel-caption {
+    position: absolute;
+    right: 15%;
+    bottom: 0;
+    top: 60px;
+    left: 15%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: left;
+  }
+  .home-slider .carousel-inner {
+    height: 350px;
+  }
+
+  .top-net {
+    display: none;
+  }
+
   .seccion-contacto .clear {
     clear: both;
   }
@@ -1550,6 +1710,7 @@ text-capitalize {
   }
   header img {
     height: 60px !important;
+    padding-left: 20px;
   }
   header .nav-link {
     text-align: left !important;
@@ -1560,42 +1721,6 @@ text-capitalize {
   }
   .header-net .navbar-collapse {
     padding: 0px 0px 0px 0px;
-  }
-
-  .home-slider {
-    padding: 0px;
-    margin: 200px 0px 0px 0px;
-    min-height: 320px;
-  }
-  .home-slider p {
-    font-size: 20px;
-  }
-  .home-slider h5 {
-    font-size: 35px;
-  }
-  .home-slider img {
-    object-fit: cover;
-    height: 320px;
-  }
-  .home-slider .img-responsive {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-  .home-slider .carousel-caption {
-    position: absolute;
-    right: 15%;
-    bottom: 50px;
-    left: 15%;
-    z-index: 10;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    color: #fff;
-    text-align: left;
-    font-size: 16px;
-  }
-  .home-slider .carousel-inner {
-    min-height: 320px;
   }
 
   .quienes-cont {
@@ -1729,11 +1854,51 @@ text-capitalize {
   }
 }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .top-net {
+    display: none;
+  }
+
+  .home-slider {
+    padding: 0px;
+    margin: 100px 0px 0px 0px !important;
+    min-height: 350px;
+  }
+  .home-slider img {
+    height: 350px !important;
+  }
+  .home-slider p {
+    font-size: 20px;
+  }
+  .home-slider h5 {
+    font-size: 65px;
+  }
+  .home-slider .img-responsive {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .home-slider .carousel-caption {
+    position: absolute;
+    right: 15%;
+    bottom: 0;
+    top: 60px;
+    left: 15%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: left;
+  }
+  .home-slider .carousel-inner {
+    height: 350px;
+  }
+
   header {
     height: auto;
   }
   header img {
-    height: 55px !important;
+    height: 60px !important;
+    padding-left: 20px;
   }
   header i {
     display: none;
@@ -1748,42 +1913,6 @@ text-capitalize {
   }
   .header-net .navbar-collapse {
     padding: 0px 0px 0px 0px;
-  }
-
-  .home-slider {
-    padding: 0px;
-    margin: 0px 0px 0px 0px;
-    min-height: 410px;
-  }
-  .home-slider p {
-    font-size: 20px;
-  }
-  .home-slider h5 {
-    font-size: 35px;
-  }
-  .home-slider img {
-    object-fit: cover;
-    height: 410px;
-  }
-  .home-slider .img-responsive {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-  .home-slider .carousel-caption {
-    position: absolute;
-    right: 15%;
-    bottom: 50px;
-    left: 15%;
-    z-index: 10;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    color: #fff;
-    text-align: left;
-    font-size: 16px;
-  }
-  .home-slider .carousel-inner {
-    min-height: 320px;
   }
 
   .quienes-cont {
@@ -1959,7 +2088,7 @@ text-capitalize {
 
   header {
     height: 20px;
-    padding: 20px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
   }
   header .navbar {
     padding: 20px 0px 0px 0px;

@@ -7,22 +7,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>NetInteractiva</title>
   <!-- Bootstrap -->
-
   <link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.min.css">
-
   <link rel="stylesheet" href="./src/css/main.css">
-
   <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
   <script type="text/javascript" src="./bower_components/jquery/dist/jquery.js"></script>
   <script type="text/javascript" src="./bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-
-  <!-- <script data-require="angular.js@1.2.28" data-semver="1.2.28" src="https://code.angularjs.org/1.2.28/angular.js"></script>
-   <script data-require="angular-route@1.2.28" data-semver="1.2.28" src="https://code.angularjs.org/1.2.28/angular-route.js"></script> -->
-   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css" />
   <script src="src/js/slider-logo.js"></script>
-
+  <script src="src/js/galery-img.js"></script>
   <script type="text/javascript">
     $('#myModal').on('shown.bs.modal', function () {
       $('#myInput').trigger('focus')
@@ -54,8 +47,6 @@
     });
   });
   </script>
-
-
 </head>
 
 <body >
@@ -64,29 +55,29 @@
     keyboard_arrow_up
     </i> </button>
   </div>
-
 <div id="inicio"></div>
   <!--Main Navigation-->
   <header class="fixed-top">
+    <div class="top-net">
+      <div class="container">
+        <a class="light" href=""><img src="./src/images/web/facebook.svg" alt="rrss" height="30" class="  img-fluid"/></a>
+        <a class="light" href=""><img src="./src/images/web/insta.svg" alt="rrss" height="30" class="  img-fluid"/></a>
+        <a class="light" href="tel:+56227832000">(+569)4218 27 70</a>
+        <a class="light" href="mailto:contacto@netinteractiva.cl">contacto@netinteractiva.cl</a>
+      </div>
+    </div>
     <nav class="navbar navbar-expand-lg navbar-light bg-lignt header-net ">
-
       <!-- Additional container -->
       <div class="container">
-
         <!-- Navbar brand -->
         <a class="navbar-brand" href="#"><img src="./src/images/logos/logo-new.png" alt="logo net interactiva" class="img-responsive logo"/></a>
-
         <!-- Collapse button -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
           aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-
-
-
       </div>
       <!-- Additional container -->
-
     </nav>
     <!-- <div class="container">
       <div class="row">
@@ -99,7 +90,6 @@
             <span class="navbar-toggler-icon"></span>
           </button>
         </div>
-
       </div>
     </div> -->
     <div class="nav-net">
@@ -107,10 +97,6 @@
         <div class="row">
           <nav class="navbar navbar-expand-lg navbar-light bg-lignt">
             <div class="container">
-              <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
-                aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button> -->
               <div class="collapse navbar-collapse" id="basicExampleNav">
                 <ul class="navbar-nav navbar-nav pull-sm-left">
                   <li class="nav-item active">
@@ -138,13 +124,10 @@
                           <a class="dropdown-item" href="#control">Control Industrial</a>
                       </div>
                   </li>
-                  <!-- <li class="nav-item">
-                    <a class="nav-link" href="./otros-servicios.html">Otros Servicios </a>
-                  </li> -->
+
                   <li class="nav-item">
                     <a class="nav-link" href="#contacto">Contáctenos</a>
                   </li>
-
                 </ul>
               </div>
             </div>
@@ -211,49 +194,56 @@
     <div class="row">
         <div id="slider-1" class="carousel carousel-by-item slide" data-ride="carousel" data-interval="5000">
             <div class="carousel-inner" role="listbox">
+
                 <div class="carousel-item active">
-                    <div class="col-sm-12 col-md-12 col-lg-4 col-4">
-                      <div class="quienes-cont">
-                        <h2>soporte informático</h2>
-                        <div class="cont-parrafo">
-                          <p>Nuestros clientes pueden gestionar sus actividades sin preocupaciones por el funcionamiento de sus sistemas y equipos.</p>
-                          <p>NETINTERACTIVA se ocupa de resolver todos sus problemas computacionales.</p>
-                          <p>
-                            <ul>
-                              <li class="feature"><span class="mdi mdi-account-check"></span> Visita correctiva</li>
-                              <li class="feature"><span class="mdi mdi-alert-decagram"></span> Visita preventiva</li>
-                              <li class="feature"><span class="mdi mdi-clock-outline"></span> Planes de mantención y asesoria</li>
-                              <li class="feature"><span class="mdi mdi-account-network"></span> Instalación puntos de red</li>
-                            </ul>
-                          </p>
-                        </div>
+                    <div class="col col-lg-6  ">
+                      <a href="#cctv">
+                        <div class="quienes-cont">
+                          <h2>Sistema de vigilancia CCTV</h2>
+                          <div class="cont-parrafo">
+                            <p>A partir de 2017 ponemos a disposición de nuestros clientes el servicio de seguridad por cámaras de vigilancia.</p>
+                            <p>
+                              Estas son integradas en un sistema de Circuito Cerrado de Televisión (CCTV) que permite un control efectivo y permanente.
+                            </p>
+                            <p>
+                              NETINTERACTIVA se ocupa de instalar y mantener el sistema, asegurando un funcionamiento óptimo y en cumplimiento con los estándares de calidad.
+                            </p>
+                            <p>
+                              <ul>
+                                <li class="feature"><span class="mdi mdi-monitor-dashboard"></span> Vigilancia CCTV</li>
+                              </ul>
+                            </p>
 
-                      </div>
+                          </div>
+                        </div>
+                      </a>
+
                     </div>
                 </div>
-                <div class="carousel-item">
-                    <div class="col-sm-12 col-md-12 col-lg-4 col-4">
-                      <div class="quienes-cont">
-                        <h2>Sistema de vigilancia CCTV</h2>
-                        <div class="cont-parrafo">
-                          <p>A partir de 2017 ponemos a disposición de nuestros clientes el servicio de seguridad por cámaras de vigilancia.</p>
-                          <p>
-                            Estas son integradas en un sistema de Circuito Cerrado de Televisión (CCTV) que permite un control efectivo y permanente.
-                          </p>
-                          <p>
-                            NETINTERACTIVA se ocupa de instalar y mantener el sistema, asegurando un funcionamiento óptimo y en cumplimiento con los estándares de calidad.
-                          </p>
-                          <p>
-                            <ul>
-                              <li class="feature"><span class="mdi mdi-monitor-dashboard"></span> Vigilancia CCTV</li>
-                            </ul>
-                          </p>
+                <div class="carousel-item  ">
+                    <div class="col col-lg-6 ">
+                      <a href="#servicio">
+                        <div class="quienes-cont">
+                          <h2>soporte informático</h2>
+                          <div class="cont-parrafo">
+                            <p>Nuestros clientes pueden gestionar sus actividades sin preocupaciones por el funcionamiento de sus sistemas y equipos.</p>
+                            <p>NETINTERACTIVA se ocupa de resolver todos sus problemas computacionales.</p>
+                            <p>
+                              <ul>
+                                <li class="feature"><span class="mdi mdi-account-check"></span> Visita correctiva</li>
+                                <li class="feature"><span class="mdi mdi-alert-decagram"></span> Visita preventiva</li>
+                                <li class="feature"><span class="mdi mdi-clock-outline"></span> Planes de mantención y asesoria</li>
+                                <li class="feature"><span class="mdi mdi-account-network"></span> Instalación puntos de red</li>
+                              </ul>
+                            </p>
+                          </div>
 
                         </div>
-                      </div>
+                      </a>
+
                     </div>
                 </div>
-                <div class="carousel-item">
+                <!-- <div class="carousel-item">
                     <div class="col-sm-12 col-md-12 col-lg-4 col-4">
                       <div class="quienes-cont">
                         <h2>Ingeniería</h2>
@@ -277,7 +267,7 @@
 
                       </div>
                     </div>
-                </div>
+                </div> -->
 
             </div>
             <!-- <a class="carousel-control-prev" href="#slider-1" role="button" data-slide="prev">
@@ -293,6 +283,30 @@
 
   </div>
 </section>
+
+<!-- seccion aire -->
+<section class="seccion-certific ">
+  <div class='container-fluid'>
+    <div class="row">
+      <div class="col-sm-12">
+        <h1 class="">Estamos Certificados: </h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 col-md-6 col-lg-6">
+        <img src="./src/images/web/logo-cert1.png" alt="rrss" height="30" class="  img-fluid rounded mx-auto d-block"/>
+        <p>Ganadores del fondo TI Crece 2016 de Sercotec para pymes con mejor servicio al cliente e innovación tecnológica.</p>
+
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-6">
+        <img src="./src/images/web/logo-cert2.png" alt="rrss" height="30" class="  img-fluid rounded mx-auto d-block"/>
+        <p>Este año logramos la certificación UBWA de la marca UBIQUITI. Próximamente obtendremos la certificación UEWA.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- fin seccion aire -->
 
 
 
@@ -387,8 +401,6 @@
               <li>Revisión de configuración de impresoras</li>
               <li>Actualización de mejoras para el sistema operativo o software ofimatica</li>
               <li>Respaldos de computadores</li>
-
-
             </ul>
           </p>
         </div>
@@ -405,11 +417,9 @@
     <div class="col-xs-12 col-md-3">
       <a class="btn bg-blue-corp btn-lg cl-white" href="#contacto">Contáctenos</a>
     </div>
-
     </div>
   </div>
 </section>
-
 <!-- fin seccion visitas -->
 
 <!-- seccion planes -->
@@ -418,12 +428,10 @@
     <div class="row">
       <div class="col-xs-12 planes-titulo">
         <h1 class="">Planes Mantención</h1>
-
       </div>
       <div class="col-xs-12 planes-subtitulo">
         <h3>Servicio especializado para empresas MIPYME que requieran a un partner tecnológico con atención 24/7. </h3>
       </div>
-
     </div>
     <div class="row">
       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">
@@ -573,6 +581,7 @@
 <!-- fin seccion-google -->
 
 <!-- seccion cctv -->
+<div id="cctv"></div>
 <section class="seccion-cctv">
   <div class='container-fluid'>
     <div class="row">
@@ -608,7 +617,6 @@
           <div class="cont-parrafo">
             <p>Utilizamos cable 100% cobre para todos nuestros proyectos.  </p>
           </div>
-
         </div>
       </div>
       <div class="col-xs-12  col-sm-12 col-md-6 col-lg-3">
@@ -616,7 +624,6 @@
           <div class="image d-flex justify-content-center">
               <img src="src/images/web/dahua-pss.png" alt="" height="200">
           </div>
-
           <h2>Software propio de la Marca</h2>
           <div class="cont-parrafo">
             <p>Alimentación de camaras, con cable independiente para cada camara.  </p>
@@ -629,12 +636,10 @@
           <div class="image d-flex justify-content-center">
               <img src="src/images/web/dahua-multiplatform-2.png" alt="" height="200">
           </div>
-
           <h2>Multiplataformal</h2>
           <div class="cont-parrafo">
             <p>Mejoras continuas en nuestros tecnicos.  </p>
           </div>
-
         </div>
       </div>
     </div>
@@ -683,7 +688,6 @@
               Control de acceso a edificios, oficinas , colegios, condominios, lugares privados, etc.
             </p>
           </div>
-
         </div>
       </div>
     </div>
@@ -707,9 +711,6 @@
             <p>
               Fuente de suministro electrico que posee una bateria con el fin de seguir dando energia a un dispositivo en el caso de una interrupcion electrica.
             </p>
-
-
-
           </div>
         </div>
       </div>
@@ -865,64 +866,136 @@
 
 </div>
 <!-- seccion clientes -->
-<section class="seccion-clientes" >
+<section class="seccion-clientes">
   <div class='container-fluid'>
     <div class="row">
       <div class="col-xs-12 planes-titulo">
         <h1 class="">Nuestros clientes</h1>
-
       </div>
       <div class="col-xs-12 planes-subtitulo">
-        <h3>Somos más que un proveedor de servicios, somos un partner tecnológico siempre presente, somos NETINTERACTIVA.  </h3>
+        <h3>Somos más que un proveedor de servicios, somos un partner tecnológico siempre presente, somos NETINTERACTIVA. </h3>
       </div>
-
     </div>
     <div class="row">
       <div class="col-xs-6 col-sm-4 col-sm-4 col-lg-3  ">
         <div class="clientes-img">
-          <img src="src/images/web/logos-net.png" alt=""  class="img-responsive">
+          <img src="src/images/web/logos-net.png" alt="" class="img-responsive">
         </div>
       </div>
       <div class="col-xs-6 col-sm-4 col-sm-4 col-lg-3  ">
         <div class="clientes-img">
-          <img src="src/images/web/logos-net02.png" alt=""  class="img-responsive">
+          <img src="src/images/web/logos-net02.png" alt="" class="img-responsive">
         </div>
       </div>
       <div class="col-xs-6 col-sm-4 col-sm-4 col-lg-3  ">
         <div class="clientes-img">
-          <img src="src/images/web/logos-net03.png" alt=""  class="img-responsive">
+          <img src="src/images/web/logos-net03.png" alt="" class="img-responsive">
         </div>
       </div>
       <div class="col-xs-6 col-sm-4 col-sm-4 col-lg-3  ">
         <div class="clientes-img">
-          <img src="src/images/web/logos-net04.png" alt=""  class="img-responsive">
+          <img src="src/images/web/logos-net04.png" alt="" class="img-responsive">
         </div>
       </div>
       <div class="col-xs-6 col-sm-4 col-sm-4 col-lg-3  ">
         <div class="clientes-img">
-          <img src="src/images/web/logos-net05.png" alt=""  class="img-responsive">
+          <img src="src/images/web/logos-net05.png" alt="" class="img-responsive">
         </div>
       </div>
       <div class="col-xs-6 col-sm-4 col-sm-4 col-lg-3  ">
         <div class="clientes-img">
-          <img src="src/images/web/logos-net06.png" alt=""  class="img-responsive">
+          <img src="src/images/web/logos-net06.png" alt="" class="img-responsive">
         </div>
       </div>
       <div class="col-xs-6 col-sm-4 col-sm-4 col-lg-3  ">
         <div class="clientes-img">
-          <img src="src/images/web/logos-net07.png" alt=""  class="img-responsive">
+          <img src="src/images/web/logos-net07.png" alt="" class="img-responsive">
         </div>
       </div>
       <div class="col-xs-6 col-sm-4 col-sm-4 col-lg-3  ">
         <div class="clientes-img">
-          <img src="src/images/web/logos-net08.png" alt=""  class="img-responsive">
+          <img src="src/images/web/logos-net08.png" alt="" class="img-responsive">
         </div>
       </div>
     </div>
-
+  </div>
+  <div class='container-fluid seccion-trabajo'>
+    <div class="row">
+      <div class="col-xs-12 trabajo-titulo">
+        <h1 class="">Nuestros trabajos</h1>
+      </div>
+      <hr class="mt-2 mb-5">
+      <div class="row">
+        <div class="col-lg-3 col-md-4 col-6">
+          <a class="thumbnail d-block mb-4 h-100" href="#" data-image-id="" data-toggle="modal" data-title="" data-image="./src/images/web/fondo-servicio.png" data-target="#image-gallery">
+            <img class="img-fluid img-thumbnail" src="./src/images/web/fondo-servicio.png" alt="Another alt text">
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6">
+          <a class="thumbnail d-block mb-4 h-100" href="#" data-image-id="" data-toggle="modal" data-title="" data-image="./src/images/web/fondo-servicio2.png" data-target="#image-gallery">
+            <img class="img-fluid img-thumbnail" src="./src/images/web/fondo-servicio2.png" alt="Another alt text">
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6">
+          <a class="thumbnail d-block mb-4 h-100" href="#" data-image-id="" data-toggle="modal" data-title="" data-image="./src/images/web/fondo-servicio3.png" data-target="#image-gallery">
+            <img class="img-fluid img-thumbnail" src="./src/images/web/fondo-servicio3.png" alt="Another alt text">
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6">
+          <a class="thumbnail d-block mb-4 h-100" href="#" data-image-id="" data-toggle="modal" data-title="" data-image="./src/images/web/fondo-servicio.png" data-target="#image-gallery">
+            <img class="img-fluid img-thumbnail" src="./src/images/web/fondo-servicio.png" alt="Another alt text">
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6">
+          <a class="thumbnail d-block mb-4 h-100" href="#" data-image-id="" data-toggle="modal" data-title="" data-image="./src/images/web/fondo-servicio2.png" data-target="#image-gallery">
+            <img class="img-fluid img-thumbnail" src="./src/images/web/fondo-servicio2.png" alt="Another alt text">
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6">
+          <a class="thumbnail d-block mb-4 h-100" href="#" data-image-id="" data-toggle="modal" data-title="" data-image="./src/images/web/fondo-servicio3.png" data-target="#image-gallery">
+            <img class="img-fluid img-thumbnail" src="./src/images/web/fondo-servicio3.png" alt="Another alt text">
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6">
+          <a class="thumbnail d-block mb-4 h-100" href="#" data-image-id="" data-toggle="modal" data-title="" data-image="./src/images/web/fondo-servicio.png" data-target="#image-gallery">
+            <img class="img-fluid img-thumbnail" src="./src/images/web/fondo-servicio.png" alt="Another alt text">
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6">
+          <a class="thumbnail d-block mb-4 h-100" href="#" data-image-id="" data-toggle="modal" data-title="" data-image="./src/images/web/fondo-servicio2.png" data-target="#image-gallery">
+            <img class="img-fluid img-thumbnail" src="./src/images/web/fondo-servicio2.png" alt="Another alt text">
+          </a>
+        </div>
+      </div>
+      <div class="modal fade " id="image-gallery" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog h--margin-top">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+              <h4 class="modal-title" id="image-gallery-title"></h4>
+            </div>
+            <div class="modal-body">
+              <img id="image-gallery-image" class="img-fluid" src="">
+            </div>
+            <div class="modal-footer">
+              <div class="col-md-2">
+                <button type="button" class="btn btn-primary" id="show-previous-image">Previous</button>
+              </div>
+              <div class="col-md-8 text-justify" id="image-gallery-caption">
+              </div>
+              <div class="col-md-2">
+                <button type="button" id="show-next-image" class="btn btn-default">Next</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 <!--fin seccion clientes -->
+
+
 <div id="equipo">
 
 </div>
@@ -952,6 +1025,23 @@
                 <div class="name text-center my-2">Daniel Orellana</div>
                 <p class=" text-justify">
                   Técnico en Computación e Informática, egresado y titulado el año 2015 con distinción máxima. Con vasta experiencia en los distintos aspectos del trabajo informático para distintas empresas.
+                </p>
+            </div>
+        </div>
+        <div class="col">
+            <div class="profile d-flex justify-content-center flex-column">
+              <h2>Lorem Ipsum has been</h2>
+                <div class="picture rounded-circle mx-auto">
+                    <figure>
+                        <img src="src/images/equipo/daniel_orellana.jpg" alt="">
+                        <figcaption>
+                            Lorem ipsum
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="name text-center my-2">Lorem Ipsum</div>
+                <p class=" text-justify">
+                  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                 </p>
             </div>
         </div>
