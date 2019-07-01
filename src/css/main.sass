@@ -19,6 +19,28 @@ header
   img
     height: 85px !important
 
+.testimonial-net
+  width: auto
+  height: 80px
+  margin: 0px
+  padding: 15px 20px
+  border: solid 1px #ccc
+  border-radius: 5px
+  p
+    font-size: 16px
+    line-height: 16px
+    font-style: italic
+    color: #666
+    margin: 5px 0px 0px 0px
+    text-align: center
+  h6
+    font-size: 14px
+    line-height: 16px
+    color: #999
+    font-weight: 500
+    margin: 5px 0px 0px 0px
+    text-align: center
+
 
 .top-net
   background: #1c222e
@@ -26,6 +48,8 @@ header
   height: 40px
   width: 100%
   margin: 0px 0px 0px 0px
+  float: right
+
 
   i
     margin: 0px 0px 0px 0px
@@ -1524,6 +1548,14 @@ text-capitalize
   text-transform: capitalize
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 767px)
+  .navbar-nav
+    padding-left: 20px
+    padding-bottom: 20px
+
+  .testimonial-net
+    display: none
+  .off-test
+    display: none
   .home-slider
     padding: 0px
     margin: 100px 0px 0px 0px !important
@@ -1723,6 +1755,22 @@ text-capitalize
         height: 70px
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px)
+  .navbar-light .navbar-nav
+    a
+      text-align: left !important
+  .navbar-nav
+    padding-left: 30px
+    padding-bottom: 20px
+
+  // .navbar-toggler:not(:disabled):not(.disabled)
+  //     cursor: pointer
+  //     float: right
+
+
+  .testimonial-net
+    display: none
+  .off-test
+    display: none
   .top-net
     display: none
   .home-slider
